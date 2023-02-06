@@ -9,4 +9,3 @@ BOOST_AUTO_TEST_CASE(FactorialTest) {
     BOOST_CHECK(factorial_boost::factorial(2) == 2);
     BOOST_CHECK(factorial_boost::factorial(3) == 6);
 }
-

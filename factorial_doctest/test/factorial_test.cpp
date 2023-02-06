@@ -1,6 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 
 #include <doctest/doctest.h>
+
 #include <factorial_doctest/include/factorial.h>
 
 TEST_CASE("FactorialTest") {
