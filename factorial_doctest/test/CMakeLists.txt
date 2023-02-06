@@ -7,7 +7,7 @@ FetchContent_Declare(
     doctest
     GIT_REPOSITORY https://github.com/onqtam/doctest.git
     GIT_TAG        v2.4.9
-)
+    GIT_SHALLOW    TRUE)
 FetchContent_MakeAvailable(doctest)
 
 add_executable(factorial_doctest_tests factorial_test.cpp)

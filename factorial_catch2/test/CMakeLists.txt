@@ -6,11 +6,13 @@ include(FetchContent)
 FetchContent_Declare(
     Catch2
     GIT_REPOSITORY https://github.com/catchorg/Catch2.git
-    GIT_TAG        v3.2.0)
+    GIT_TAG        v3.2.0
+    GIT_SHALLOW    TRUE)
 FetchContent_Declare(
     FakeIt
     GIT_REPOSITORY https://github.com/eranpeer/FakeIt.git
-    GIT_TAG        2.3.2)
+    GIT_TAG        2.3.2
+    GIT_SHALLOW    TRUE)
 FetchContent_MakeAvailable(Catch2)
 FetchContent_MakeAvailable(FakeIt)
 
