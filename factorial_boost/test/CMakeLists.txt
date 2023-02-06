@@ -7,11 +7,11 @@ set(BOOST_ENABLE_CMAKE ON)
 
 include(FetchContent)
 FetchContent_Declare(
-    build_boost
+    boost
     GIT_REPOSITORY https://github.com/boostorg/boost.git
     GIT_TAG        boost-1.81.0
-)
-FetchContent_MakeAvailable(build_boost)
+    GIT_SHALLOW    TRUE)
+FetchContent_MakeAvailable(boost)
 
 add_executable(factorial_boost_tests factorial_test.cpp)
 target_link_libraries(factorial_boost_tests PRIVATE factorial_boost)
