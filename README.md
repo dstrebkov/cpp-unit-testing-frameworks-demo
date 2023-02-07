@@ -1,17 +1,54 @@
 # cpp-unit-testing-frameworks-demo
+==================================
 
-Sample CMake-based C++ application that links against several static libraries configured with 4 C++ unit testing frameworks:
+![cpp-cmake-project-template](https://github.com/dstrebkov/cpp-unit-testing-frameworks-demo/actions/workflows/cmake.yml/badge.svg?event=push)
+![language](https://img.shields.io/github/languages/top/dstrebkov/cpp-unit-testing-frameworks-demo)
+![repo size](https://img.shields.io/github/repo-size/dstrebkov/cpp-unit-testing-frameworks-demo)
+
+Sample CMake-based C++ application that links against several static libraries configured with several unit
+testing frameworks.
+
+## Contents
 
 - library configured with [Catch2 v3](https://github.com/catchorg/Catch2) ([v3.2.0](https://github.com/catchorg/Catch2/releases/tag/v3.2.0)) for unit testing & [FakeIt](https://github.com/eranpeer/FakeIt) ([2.3.2](https://github.com/eranpeer/FakeIt/releases/tag/2.3.2)) for mocking;
 - library configured with [GoogleTest](https://github.com/google/googletest) ([v1.13.0](https://github.com/google/googletest/releases/tag/v1.13.0)) for unit testing and mocking;
 - library configured with [Doctest](https://github.com/doctest/doctest) ([v2.4.9](https://github.com/doctest/doctest/releases/tag/v2.4.9)) for unit testing & [FakeIt](https://github.com/eranpeer/FakeIt) ([2.3.2](https://github.com/eranpeer/FakeIt/releases/tag/2.3.2)) for mocking;
 - library configured with [Boost.Test](https://github.com/boostorg/test) ([boost-1.81.0](https://github.com/boostorg/test/releases/tag/boost-1.81.0)) for unit testing;
+- application that links with them to run some code.
 
+Project's 3-rd party dependencies (_GoogleTest_, _Catch2 v3_, _FakeIt_, _Doctest_, _Boost_) are obtained from GitHub
+using CMake's functions `FetchContent_Declare()` and `FetchContent_MakeAvailable()`.
 
-Project's 3-rd party dependencies (_GoogleTest_, _Catch2 v3_, _FakeIt_ and _Doctest_) are obtained from GitHub using
-CMake's functions `FetchContent_Declare()`/`FetchContent_MakeAvailable()`.
+Support of the library that uses Boost.Test is currently under conditional compilation and is disabled by default.
+Check instructions below on how it could be enabled, but that would require time consuming fetching of Boost sources
+and its building.
 
-The project structure is provided below: 
+## Instructions
+
+Compile and make:
+
+```
+mkdir cmake-build
+cd cmake-build/
+cmake ..
+make
+```
+
+Run `app_factorial` application:
+
+```
+cd app_factorial/
+./app_factorial
+```
+
+Run unit tests (called from `cmake-build` folder):
+
+```
+cd ..
+ctest
+```
+
+## Project structure
 
 ```
 .
@@ -66,3 +103,7 @@ The project structure is provided below:
 └── CMakeLists.txt             # Main compile script
 ```
 
+## Useful Links
+
+* [Doctest Tutorial](https://github.com/doctest/doctest/blob/master/doc/markdown/tutorial.md)
+* [FakeIt Quickstart](https://github.com/eranpeer/FakeIt/wiki/Quickstart)
