@@ -30,7 +30,19 @@ Compile and make:
 ```
 mkdir cmake-build
 cd cmake-build/
-cmake ..
+```
+
+Next, if <u>not</u> using Boost.Test-based demo library, execute:
+
+```
+cmake
+make
+```
+
+Otherwise, execute:
+
+```
+cmake -DBUILD_FACTORIAL_BOOST_TEST_LIB=ON ..
 make
 ```
 
