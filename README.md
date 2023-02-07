@@ -25,14 +25,14 @@ and its building.
 
 ## Instructions
 
-Compile and make:
+Start by doing:
 
 ```
 mkdir cmake-build
 cd cmake-build/
 ```
 
-Next, if <u>not</u> using Boost.Test-based demo library, execute:
+Next, if ***not*** using Boost.Test-based demo library, execute:
 
 ```
 cmake
