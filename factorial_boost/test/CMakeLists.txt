@@ -43,3 +43,5 @@ set(FACTORIAL_BOOST_TEST_INCLUDE_DIRS
     "${boost_range_SOURCE_DIR}/include")
 
 target_include_directories(factorial_boost_tests PUBLIC "${CMAKE_SOURCE_DIR}" ${FACTORIAL_BOOST_TEST_INCLUDE_DIRS})
+
+add_test(NAME factorial_boost_tests COMMAND factorial_boost_tests)
