@@ -14,8 +14,6 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-enable_testing()
-
 add_executable(factorial_gtest_tests factorial_test.cpp)
 target_include_directories(factorial_gtest_tests PUBLIC "${CMAKE_SOURCE_DIR}")
 target_link_libraries(factorial_gtest_tests GTest::gtest_main factorial_gtest)
