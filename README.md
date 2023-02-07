@@ -35,7 +35,7 @@ cd cmake-build/
 Next, if ***not*** using Boost.Test-based demo library, execute:
 
 ```
-cmake
+cmake ..
 make
 ```
 
