@@ -3,7 +3,7 @@
 
 #include <factorial_catch2/include/factorial.h>
 
-TEST_CASE("FactorialTest", "[Factorial]") {
+TEST_CASE("Catch2_FactorialTest", "[Catch2_FactorialTest]") {
     REQUIRE(factorial_catch2::factorial(1) == 1);
     REQUIRE(factorial_catch2::factorial(2) == 2);
     REQUIRE(factorial_catch2::factorial(3) == 6);
@@ -16,7 +16,7 @@ struct FactorialStruct {
     virtual int factorial(int) = 0;
 };
 
-TEST_CASE("MockedFactorial", "[Factorial]") {
+TEST_CASE("Catch2_MockedFactorialTest", "[Catch2_FactorialTest]") {
     Mock<FactorialStruct> mock;
 
     When(Method(mock, factorial).Using(3)).Return(6);

@@ -12,7 +12,7 @@ struct FactorialStruct {
     virtual int factorial(int) = 0;
 };
 
-TEST_CASE("FactorialTest") {
+TEST_CASE("doctest_FactorialTest") {
     CHECK((factorial_doctest::factorial(1) == 1));
     CHECK((factorial_doctest::factorial(2) == 2));
     CHECK((factorial_doctest::factorial(3) == 6));
