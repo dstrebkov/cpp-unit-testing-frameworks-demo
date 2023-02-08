@@ -2,9 +2,6 @@ cmake_minimum_required(VERSION 3.24)
 
 project(factorial_boost_tests LANGUAGES CXX)
 
-# TODO: Needed or not?
-set(BOOST_ENABLE_CMAKE ON)
-
 include(FetchContent)
 FetchContent_Declare(
     boost
