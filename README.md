@@ -1,5 +1,4 @@
 # cpp-unit-testing-frameworks-demo
-==================================
 
 ![cpp-cmake-project-template](https://github.com/dstrebkov/cpp-unit-testing-frameworks-demo/actions/workflows/cmake.yml/badge.svg?event=push)
 ![language](https://img.shields.io/github/languages/top/dstrebkov/cpp-unit-testing-frameworks-demo)
