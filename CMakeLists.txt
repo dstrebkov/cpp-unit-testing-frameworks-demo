@@ -7,13 +7,14 @@ option(BUILD_FACTORIAL_BOOST_TEST_LIB "Build library that uses Boost.Test") # OF
 # Enable CTest at the current directory and below (before add_subdirectory())
 enable_testing()
 
-add_subdirectory(factorial_catch2)
-add_subdirectory(factorial_gtest)
-add_subdirectory(factorial_doctest)
-
 if(BUILD_FACTORIAL_BOOST_TEST_LIB)
     ADD_DEFINITIONS(-DBUILD_FACTORIAL_BOOST_TEST_LIB)
     add_subdirectory(factorial_boost)
 endif()
+
+add_subdirectory(factorial_catch2)
+add_subdirectory(factorial_doctest)
+add_subdirectory(factorial_gtest)
+add_subdirectory(factorial_lest)
 
 add_subdirectory(app_factorial)
