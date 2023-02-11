@@ -61,6 +61,8 @@ ctest
 
 ## Project structure
 
+Placeholder `XXX` on depicted structure below stands for the name of the used unit testing framework.
+
 ```
 .
 │
@@ -71,45 +73,15 @@ ctest
 │   ├── test/                  # Application test folder (empty)
 │   └── CMakeLists.txt         # Compile script for application
 │
-├── factorial_boost            # Boost.Test-based static library
-│   ├── include                # Boost.Test-based library includes
-│   │   └── factorial.h        # Boost.Test-based library header
-│   ├── src                    # Boost.Test-based library sources
-│   │   └── factorial.cpp      # Boost.Test-based library source
-│   ├── test/                  # Boost.Test-based library tests
-│   │   ├── factorial_test.cpp # Tests for Boost.Test-based library
-│   │   └── CMakeLists.txt     # Compile script for tests of Boost.Test-based library
-│   └── CMakeLists.txt         # Boost.Test-based library compile script
-│
-├── factorial_catch2           # Catch2-based static library
-│   ├── include                # Catch2-based library includes
-│   │   └── factorial.h        # Catch2-based library header
-│   ├── src                    # Catch2-based library sources
-│   │   └── factorial.cpp      # Catch2-based library source
-│   ├── test/                  # Catch2-based library tests
-│   │   ├── factorial_test.cpp # Tests for Catch2-based library
-│   │   └── CMakeLists.txt     # Compile script for tests of Catch2-based library
-│   └── CMakeLists.txt         # Catch2-based library compile script
-│
-├── factorial_doctest          # Doctest-based static library
-│   ├── include                # Doctest-based library includes
-│   │   └── factorial.h        # Doctest-based library header
-│   ├── src                    # Doctest-based library sources
-│   │   └── factorial.cpp      # Doctest-based library source
-│   ├── test/                  # Doctest-based library tests
-│   │   ├── factorial_test.cpp # Tests for Doctest-based library
-│   │   └── CMakeLists.txt     # Compile script for tests of Doctest-based library
-│   └── CMakeLists.txt         # Doctest-based library compile script
-│
-├── factorial_gtest            # GTest-based static library
-│   ├── include                # GTest-based library includes
-│   │   └── factorial.h        # GTest-based library header
-│   ├── src                    # GTest-based library sources
-│   │   └── factorial.cpp      # GTest-based library source
-│   ├── test/                  # GTest-based library tests
-│   │   ├── factorial_test.cpp # Tests for GTest-based library
-│   │   └── CMakeLists.txt     # Compile script for tests of GTest-based library
-│   └── CMakeLists.txt         # GTest-based library compile script
+├── factorial_XXX              # XXX-based static library
+│   ├── include                # XXX-based library includes
+│   │   └── factorial.h        # XXX-based library header
+│   ├── src                    # XXX-based library sources
+│   │   └── factorial.cpp      # XXX-based library source
+│   ├── test/                  # XXX-based library tests
+│   │   ├── factorial_test.cpp # Tests for XXX-based library
+│   │   └── CMakeLists.txt     # Compile script for tests of XXX-based library
+│   └── CMakeLists.txt         # XXX-based library compile script
 │
 └── CMakeLists.txt             # Main compile script
 ```
