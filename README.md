@@ -4,7 +4,7 @@
 ![language](https://img.shields.io/github/languages/top/dstrebkov/cpp-unit-testing-frameworks-demo)
 ![repo size](https://img.shields.io/github/repo-size/dstrebkov/cpp-unit-testing-frameworks-demo)
 
-Sample CMake-based C++ application that demonstrates setup and basic usage of several unit testing frameworks for C++.
+Sample CMake-based C++ application that demonstrates setup and basic usage of several Unit Testing Frameworks for C++.
 
 ## Contents
 
