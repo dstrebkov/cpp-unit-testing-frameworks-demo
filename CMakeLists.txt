@@ -12,8 +12,11 @@ if(BUILD_FACTORIAL_BOOST_TEST_LIB)
     add_subdirectory(factorial_boost)
 endif()
 
+if(UNIX AND NOT APPLE)
+    add_subdirectory(factorial_criterion)
+endif()
+
 add_subdirectory(factorial_catch2)
-add_subdirectory(factorial_criterion)
 add_subdirectory(factorial_doctest)
 add_subdirectory(factorial_gtest)
 add_subdirectory(factorial_lest)
