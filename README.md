@@ -10,12 +10,12 @@ CMake ≥ `3.14.0` is required.
 
 ## Contents
 
-- library configured with [Boost.Test](https://github.com/boostorg/test) ([boost-1.81.0](https://github.com/boostorg/test/releases/tag/boost-1.81.0)) for unit testing;
-- library configured with [Catch2 v3](https://github.com/catchorg/Catch2) ([v3.2.0](https://github.com/catchorg/Catch2/releases/tag/v3.2.0)) for unit testing & [FakeIt](https://github.com/eranpeer/FakeIt) ([2.3.2](https://github.com/eranpeer/FakeIt/releases/tag/2.3.2)) for mocking;
-- library configured with [Criterion](https://github.com/Snaipe/Criterion) ([v2.4.1](https://github.com/Snaipe/Criterion/releases/tag/v2.4.1)) for unit testing & [trompeloeil](https://github.com/rollbear/trompeloeil) ([v43](https://github.com/rollbear/trompeloeil/releases/tag/v43)) for mocking;
-- library configured with [Doctest](https://github.com/doctest/doctest) ([v2.4.9](https://github.com/doctest/doctest/releases/tag/v2.4.9)) for unit testing & [FakeIt](https://github.com/eranpeer/FakeIt) ([2.3.2](https://github.com/eranpeer/FakeIt/releases/tag/2.3.2)) for mocking;
-- library configured with [GoogleTest](https://github.com/google/googletest) ([v1.13.0](https://github.com/google/googletest/releases/tag/v1.13.0)) for unit testing and mocking;
-- library configured with [lest](https://github.com/martinmoene/lest) ([1.35.1](https://github.com/martinmoene/lest/releases/tag/v1.35.1)) for unit testing & [trompeloeil](https://github.com/rollbear/trompeloeil) ([v43](https://github.com/rollbear/trompeloeil/releases/tag/v43)) for mocking;
+- library configured with [Boost.Test](https://github.com/boostorg/test) ([`boost-1.81.0`](https://github.com/boostorg/test/releases/tag/boost-1.81.0)) for unit testing;
+- library configured with [Catch2 v3](https://github.com/catchorg/Catch2) ([`v3.2.0`](https://github.com/catchorg/Catch2/releases/tag/v3.2.0)) for unit testing & [FakeIt](https://github.com/eranpeer/FakeIt) ([`2.3.2`](https://github.com/eranpeer/FakeIt/releases/tag/2.3.2)) for mocking;
+- library configured with [Criterion](https://github.com/Snaipe/Criterion) ([`v2.4.1`](https://github.com/Snaipe/Criterion/releases/tag/v2.4.1)) for unit testing & [trompeloeil](https://github.com/rollbear/trompeloeil) ([`v43`](https://github.com/rollbear/trompeloeil/releases/tag/v43)) for mocking;
+- library configured with [Doctest](https://github.com/doctest/doctest) ([`v2.4.9`](https://github.com/doctest/doctest/releases/tag/v2.4.9)) for unit testing & [FakeIt](https://github.com/eranpeer/FakeIt) ([`2.3.2`](https://github.com/eranpeer/FakeIt/releases/tag/2.3.2)) for mocking;
+- library configured with [GoogleTest](https://github.com/google/googletest) ([`v1.13.0`](https://github.com/google/googletest/releases/tag/v1.13.0)) for unit testing and mocking;
+- library configured with [lest](https://github.com/martinmoene/lest) ([`1.35.1`](https://github.com/martinmoene/lest/releases/tag/v1.35.1)) for unit testing & [trompeloeil](https://github.com/rollbear/trompeloeil) ([`v43`](https://github.com/rollbear/trompeloeil/releases/tag/v43)) for mocking;
 - application that links with them to run some code.
 
 All unit testing frameworks except **Criterion** are obtained as sources from GitHub using CMake's functions `FetchContent_Declare()` and `FetchContent_MakeAvailable()`.
