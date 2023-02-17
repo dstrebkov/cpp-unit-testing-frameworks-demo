@@ -6,6 +6,8 @@
 
 Sample CMake-based C++ application that demonstrates setup and basic usage of several Unit Testing Frameworks for C++.
 
+CMake ≥ `3.14.0` is required.
+
 ## Contents
 
 - library configured with [Boost.Test](https://github.com/boostorg/test) ([boost-1.81.0](https://github.com/boostorg/test/releases/tag/boost-1.81.0)) for unit testing;
