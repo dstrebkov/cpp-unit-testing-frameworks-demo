@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.24)
+cmake_minimum_required(VERSION 3.14)
 
 project("cpp-unit-testing-frameworks-demo" VERSION 1.0 DESCRIPTION "Demo of multiple C++ unit testing frameworks" LANGUAGES CXX)
 

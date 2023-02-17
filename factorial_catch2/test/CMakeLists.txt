@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.24)
+cmake_minimum_required(VERSION 3.14)
 
 project(factorial_catch2_tests LANGUAGES CXX)
 
